@@ -2,8 +2,7 @@
 
 var express = require('express');
 var router = express.Router();
-var core = require('../path');
-var userService = require(core.corePath() + '/services/user');
+var userService = require('../../../Core/Core/core/services/board');
 
 router.post('/signup', function(req, res) {
 

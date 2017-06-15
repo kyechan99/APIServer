@@ -2,8 +2,7 @@
 
 var express = require('express');
 var router = express.Router();
-var core = require('../path');
-var boardService = require(core + '/services/board');
+var boardService = require('../../../Core/Core/core/services/board');
 
 router.get('/categories/list', function(req, res) {
     var promise = boardService.getCategories();

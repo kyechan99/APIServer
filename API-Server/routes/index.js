@@ -2,7 +2,7 @@
 
 var express = require('express');
 var router = express.Router();
-var userService = require('../../../Core/Core/core/services/board');
+var userService = require('../core/Core/services/user');
 
 router.post('/signup', function(req, res) {
 
@@ -17,6 +17,8 @@ router.post('/signup', function(req, res) {
         job         = req.body.job;
 
     var user = { name: name, email: email, password: password, grade: grade, phone: phone, city: city, country: country, company: company, job: job };
+
+    console.log('asdasd');
 
     var promise = userService.createUser(user);
 

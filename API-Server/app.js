@@ -25,9 +25,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/core',express.static(path.join(__dirname + '/../../Core/Core/core')));
-
 app.use('/', index);
 app.use('/', users);
 app.use('/', board);

@@ -1,5 +1,5 @@
 {
-  "name": "api-server",
+  "name": "web-server",
   "version": "0.0.0",
   "private": true,
   "scripts": {

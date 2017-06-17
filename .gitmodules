@@ -1,0 +1,3 @@
+[submodule "API-Server/core"]
+	path = API-Server/core
+	url = https://github.com/KGSHCommunity/Core.git

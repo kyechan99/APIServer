@@ -16,6 +16,10 @@ router.get('/categories/list', function(req, res) {
         });
 });
 
+router.get('/board/list', function(req, res) {
+
+});
+
 router.post('/board/post', function(req, res) {
     var promise = boardService.post(req);
 

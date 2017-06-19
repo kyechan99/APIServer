@@ -18,7 +18,7 @@ router.post('/signup', function(req, res) {
 
     var user = { name: name, email: email, password: password, grade: grade, phone: phone, city: city, country: country, company: company, job: job };
 
-    var promise = userService.createUser(user);
+    var promise = userService.createUrser(user);
 
     Promise.all([promise])
         .then(() => {

@@ -16,6 +16,15 @@ router.get('/categories/list', function(req, res) {
         });
 });
 
+router.get('/board/list', function(req, res) {
+    var page = req.body.page;
+
+    return boardService.getBoardList(page)
+        .then((result) => {
+            return result;
+        });
+});
+
 router.post('/board/post', function(req, res) {
     var promise = boardService.post(req);
 
